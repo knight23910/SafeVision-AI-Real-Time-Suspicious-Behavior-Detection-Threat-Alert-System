@@ -1,0 +1,6 @@
+{
+  "confirm": 4.0,
+  "scene_thresh": 0.95,
+  "voice": true,
+  "scene_onset": true
+}
