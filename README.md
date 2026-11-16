@@ -72,9 +72,7 @@ Camera (webcam / phone / CCTV)
 ```
 suspicious-behavior-detector/
 ├── app/
-│   ├── live_dashboard.py        # main operator console — run this
-│   ├── live_monitor.py          # older OpenCV-window monitor (superseded, less optimised)
-│   └── multi_gui.py             # test tool: load up to 4 video files and watch detection
+│   ├── gui.py        # main operator console — run this
 ├── dashboard/
 │   └── dashboard_app.py         # Flask web dashboard (login, roles, incidents, playback)
 ├── modules/
@@ -86,8 +84,6 @@ suspicious-behavior-detector/
 │   ├── db_utils.py              # SQLite incident log
 │   └── pipeline.py              # risk scoring + evidence saving
 ├── models/                      # model files (see Setup — not in the repo)
-├── tests/                       # test / diagnostic scripts, view_incidents.py, export_false_alarms.py
-├── capture_normal_frames.py     # records webcam frames to build extra "normal" training data
 ├── config.py                    # cameras, email credentials, user accounts  (edit this; keep it private)
 ├── requirements.txt
 ├── settings.json                # created at runtime: values changed on the Settings page
